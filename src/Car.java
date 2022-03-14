@@ -4,7 +4,7 @@ public class Car {
 
 
     }
-    class cartest {
+    class Cartest {
         public static void main(String[] args) {
             int a;
             Car car1 = new Car();
