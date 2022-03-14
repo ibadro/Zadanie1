@@ -1,4 +1,4 @@
-public class car {
+public class Car {
        String color = "red";
         String engine = "v6";
 
