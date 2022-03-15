@@ -2,9 +2,6 @@ class BankAccount {
         int id;
         String name;
         double balance;
-        int popolnenieSheta;
-        int snatyeSoSheta;
-
 
         public static void main(String[] args) {
 
