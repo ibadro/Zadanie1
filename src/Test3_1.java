@@ -1,4 +1,4 @@
-public class Test3 {
+public class Test3_1 {
     public static void main(String[] args) {
 
         byte b1 = 0b1100;

@@ -1,4 +1,4 @@
-package hlesson7;
+package Lesson7_2;
 
 import Lesson7_1.Employee;
 
