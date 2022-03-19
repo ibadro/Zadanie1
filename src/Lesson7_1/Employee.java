@@ -13,14 +13,35 @@ public class Employee {
     private double salary;
     String depatment;
 
-    public Employee(int id2); {
-        id=id2;
-    }
-    Employee(String surname2); {
+    public Employee(int id2) {                              // 1й конструктоа public
+        id = id2;
     }
 
+    Employee(String surname2) {                             // 2й конструктор дефолт
+        surname = surname2;
+    }
 
-}
+    private Employee(double salary2) {                      // 3й конструктор private
+        salary = salary2;
+    }
+
+    double uvelichenieZp() {
+        salary *= 2;
+        return salary;
+    }
+
+    public void getId() {                          //Также создвйте 3 Public метода которые показывать на дисплее знаения этих переменных.
+        System.out.println("ID =" + id);
+    }
+
+    public void getSurname() {
+        System.out.println("SURNAME =" + surname);
+    }
+
+    public void getSalary() {
+        System.out.println("SALARY =" + salary);
+
+    }
 }
 
 
