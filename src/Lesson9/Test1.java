@@ -1,3 +1,4 @@
+package Lesson9;
 
 //Вычислите устно output-ы Test1/2/3, а затем проверьте в компиляторе.
 
@@ -9,7 +10,7 @@ public class Test1 {
         System.out.println(this.a);
     }
     public static void main (String [] args) {
-        Test1_1 t = new Test1_1();
+        Test1 t = new Test1();
      //   t.abc(3);
         // не скомпилируется, см 7
     }

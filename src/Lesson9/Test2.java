@@ -1,3 +1,5 @@
+package Lesson9;
+
 //Вычислите устно output-ы Test1/2/3, а затем проверьте в компиляторе.
 
 public class Test2 {

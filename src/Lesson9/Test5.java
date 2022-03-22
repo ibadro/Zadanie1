@@ -1,6 +1,9 @@
+package Lesson9;
+
+
 //Вычислите устно output-ы Test1/2/3, а затем проверьте в компиляторе.
 
-public class Test3 {
+ public class Test5 {
     int a = 1;
     static int b = 2;
     void abc(int a) {
@@ -11,7 +14,7 @@ public class Test3 {
     }
 
     public static void main(String[] args) {
-        Test3_1 t = new Test3_1();
+        Test5 t = new Test5();
       //  t.abc(4);
         // 2 4 1 2
     }
