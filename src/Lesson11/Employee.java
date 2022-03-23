@@ -1,4 +1,33 @@
 package Lesson11;
-//Урок 11 - Использование примитивных и ссылочных типов данных при вызове метода.
+//Урок 11 - Аргументы методов
 public class Employee {
+    public String name;
+    public double salary;
+
+    Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public double uvelishitel(double a) {
+        a = a * 2;
+        return a;
+    }
+    public double zp2(){
+        salary= salary*2;
+        return salary;
+    }
 }
+class EmployeeTest {
+    public static void main(String[] args) {
+        Employee emp1= new Employee("Ivan", 100.555);
+        double d=emp1.uvelishitel(emp1.salary);
+        System.out.println(d);
+        System.out.println(emp1.salary);
+        emp1.zp2();
+        System.out.println(emp1.salary);
+    }
+}
+
+
+
