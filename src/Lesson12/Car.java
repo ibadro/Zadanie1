@@ -17,7 +17,7 @@ class CarTest {
 
         if(c1.engine> c2.engine) {
             if(c1.doorCount> c2.doorCount) {
-                System.out.println("Мощьность мотора и количество дверей у первой машины больше");
+                  System.out.println("Мощьность мотора и количество дверей у первой машины больше");
             }
             else {
                 System.out.println("Мощьность мотора у первой машины больше, а количество дверей меньше");
