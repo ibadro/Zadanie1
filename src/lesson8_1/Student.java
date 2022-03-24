@@ -1,6 +1,4 @@
-package lesson8_____;
-
-import com.sun.management.VMOption;
+package lesson8_1;
 
 //Урок 8 - Модификаторы «final» и «static». Понятие «константа»
 public class Student {

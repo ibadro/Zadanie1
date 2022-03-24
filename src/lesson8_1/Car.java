@@ -1,4 +1,4 @@
-package lesson8_____;
+package lesson8_1;
 //Урок 8 - Модификаторы «final» и «static». Понятие «константа»
 public class Car {
     String color = "blue";

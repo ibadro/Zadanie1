@@ -1,4 +1,4 @@
-package lesson8_____;
+package lesson8_1;
 
 public class Zadani2 {
 
