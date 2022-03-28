@@ -3,7 +3,7 @@ package Lesson2;
 
 //Урок 2 - Примитивные типы данных. Понятие «переменная». Системы счисления.
 
-public class Lesson_2_primitive {
+public class  Lesson_2_primitive {
     public static void main(String[] args) {
         byte b1 = 0B1100; // {0,1} BIN Двоичная система счисления <<0B>>
         byte b2 = 014;// {0 - 7} OCT Восьмеричная <<0>>

@@ -2,7 +2,7 @@ package Lesson3;
 
 //Урок 3-Арифметические и логические операции. Операции сравнения и присваивания
 
-public class Lesson_3_Arithmetic_Logical_Operations {
+public class  Lesson_3_Arithmetic_Logical_Operations {
     public static void main(String[] args) {
         int i1 = 5;
         int i2 = 11;
@@ -11,14 +11,14 @@ public class Lesson_3_Arithmetic_Logical_Operations {
         long l = 20L;
         double result = 0;
         result = i2 / d1 + d2 % i1 - l;
-        System.out.println("1st " + result);//20
+        System.out.println("1st " + result);//-16.7
 
         int a = 5;
         int sum_a = a-- - --a + ++a + a++ + a;
-        System.out.println("a " + sum_a);//14
+        System.out.println("a " + sum_a);//15
 
         int b = 8;
         int sum_b = ++b - b++ + ++b - --b;
-        System.out.println("b " + sum_b);//2
+        System.out.println("b " + sum_b);//1
     }
 }
