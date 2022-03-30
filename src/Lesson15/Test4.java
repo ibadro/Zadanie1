@@ -1,0 +1,13 @@
+package Lesson15;
+
+public class Test4 {
+    public static void main(String[] args)
+    {
+        int a=5; //6/7/8/9/10/11/12
+        while (a++<10){ //  в не зависимости от результата(труе или фолс) мы должны закончить действие и соотвественно увелтчить 11+1
+            a++;
+     }
+        System.out.println(a);
+    }
+
+}
