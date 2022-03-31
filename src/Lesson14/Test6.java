@@ -4,11 +4,11 @@ public class Test6 {
     public void time (){
         OUTHOR:
         for (int chas=0; chas <=23; chas++ ){
-            System.out.println("Nashalo oter loop");
+            System.out.println("Nashalo outer loop");
                 INNER:
                 for (int minuta=0; minuta<=59; minuta++){
                 System.out.println(chas+ ":" + minuta);
-                if(minuta==30) {continue OUTHOR;}
+                if(minuta==20) {continue OUTHOR;} //  будет работать и для внешнего цикла/лупа
             }
             System.out.println("Konec oter loop");
         }

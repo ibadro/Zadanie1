@@ -4,14 +4,14 @@ package Lesson15;
 public class Home {
     static void time() {
         int chas = 0;
-        OUTHOR:
+        OUTER:
         while (chas < 6) {
-            int minuta = -1;
+            int minuta = -1; //
             MIDDLE:
             do {
                 minuta++;
-                if (chas > 1 && (minuta & 10) == 0) {
-                    break OUTHOR;
+                if (chas > 1 && minuta % 10 == 0) {
+                    break OUTER;
                 }
                 int sekunda = 0;
                 INNER:
