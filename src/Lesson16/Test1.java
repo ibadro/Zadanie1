@@ -23,9 +23,5 @@ public class Test1 {
 
         boolean b2 = s1.endsWith("ri"); //  endsWith  заканчивается ли "ri"
         System.out.println(b2);
-
-
-
-
     }
 }
