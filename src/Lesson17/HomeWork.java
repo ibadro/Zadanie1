@@ -6,14 +6,14 @@ package Lesson17;
 public class HomeWork {
     public static boolean ravenstvo (StringBuilder sb1, StringBuilder sb2){
         boolean result =true;
-        if (sb1.length()== sb2.length()) {
-            for (int i=0; i<sb1.length(); i++){
+        if (sb1.length()== sb2.length()) { // если длина обоих strinbuilderов одинакова то начинаем проверку
+            for (int i=0; i<sb1.length(); i++){ // цикл проверяем чар на каждой позиции начиная с 0 для обектов сб1 и сб2
                 if(sb1.charAt(i) !=sb2.charAt(i)){
                     result =false;
                     break;
                 }
             }
-        }else {
+        }else { // если длина не совпадает -заканчиваем
             result=false;
         }
         return result;
