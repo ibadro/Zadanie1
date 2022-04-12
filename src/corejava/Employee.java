@@ -1,4 +1,4 @@
-package book;
+package corejava;
 
 // the classes in this file are part of this package
 
