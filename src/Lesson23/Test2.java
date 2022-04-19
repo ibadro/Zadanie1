@@ -1,10 +1,9 @@
 package Lesson23;
 
-
 public class Test2 {
     public static void main(String[] args) {
 //        Doctor d = new Doctor();
-//        Tesasher t = new Tesasher();
+//        Teasher t = new Teasher();
 //        Driver dr = new Driver();
 //        Employеe e = new Employеe();
 
@@ -15,16 +14,11 @@ public class Test2 {
         System.out.println(emp1.age);
         emp1.eat();
         emp1.sleep();
-
-
-
-
-
-        Employеe emp2 = new Tesasher();
+        Employеe emp2 = new Teasher();
         Employеe emp3 = new Driver();
-
         Xirurg x= new Xirurg();
         Doctor d2 = new Xirurg();
+        Employеe emp4 = new Xirurg();
     }
 }
     class Employеe{
@@ -45,7 +39,7 @@ public class Test2 {
     void operciya(){};
 
     }
-    class  Tesasher extends Employеe {
+    class Teasher extends Employеe {
         int kolichestvoushenikov;
         void ushit () {        System.out.println("Ushit");    }
     }

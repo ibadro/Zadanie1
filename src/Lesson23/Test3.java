@@ -20,7 +20,7 @@ class Frukti extends Eda{}
         int experience;
 
         Eda eat () {
-            System.out.println("kushat rabothik");
+            System.out.println("kushat rabothik"); // overraided method
             Eda e =new Eda();
             return e;
         }
@@ -28,7 +28,7 @@ class Frukti extends Eda{}
     }
     class  Teacher  extends Employеe1 {
         Eda eat() {
-            System.out.println("kushat ushitel");
+            System.out.println("kushat ushitel"); // overraided method
             Eda e = new Eda();
             return e;
         }
