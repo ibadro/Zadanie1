@@ -1,6 +1,16 @@
 package Lesson24;
 
 public class Test3 {
+    public static void main(String[] args) {
+        Help_able h = new Driver();
+        Swim_able s = new Driver();
+        Employеe e = new Driver();
+        System.out.println(h.a);
+        h.pomosh();
+        h.tushitPojar(" voda");
+        s.swim();
+    }
+}
     class Employеe {
         String name;
         int age;
@@ -8,25 +18,25 @@ public class Test3 {
         void eat() {  System.out.println("kushat");  }
         void sleep() {  System.out.println("spat");   }
     }
-    abstract class Tesasher extends Employеe implements Help_able { int kolichestvoushenikov;
-        void ushit() {
-            System.out.println("Ushit");
-        }
-
-        public void pomosh() { System.out.println(" usitel okaz pomosh");}
-         public void tushitPojar(){ System.out.println(" usitel tushit pojar");  }
-        }
-        abstract class Driver extends Employеe implements Help_able,Swim_able {
+    class Driver extends Employеe implements Help_able,Swim_able {
         String nazvaniemashini;
-            void vodit() { System.out.println("Vodit");  }
-            public void pomosh() { System.out.println(" voditel okaz pomosh");}
-            public void tushitPojar(){ System.out.println(" voditel tushit pojar");  }
-        }
+        void vodit() { System.out.println("Vodit");  }
+        public void pomosh() { System.out.println(" voditel okaz pomosh");}
+        public void tushitPojar(String s){ System.out.println(" voditel tushit pojar"+s); }
+        public void swim (){ System.out.println(" voditel mojet plavat");   }
     }
+    abstract class Tesasher extends Employеe implements Help_able { int kolichestvoushenikov;
+        void ushit() { System.out.println("Ushit");  }
+        public void pomosh() { System.out.println(" usitel okaz pomosh");}
+         public void tushitPojar(String s){ System.out.println(" usitel tushit pojar"+s);  }
+        }
     interface Help_able {
-        void pomosh();
-        void tushitPojar();
+    public abstract void pomosh();
+        void tushitPojar( String predmet);
+        public final static int a=10;
     }
     interface Swim_able {
         void swim();
+
     }
+
