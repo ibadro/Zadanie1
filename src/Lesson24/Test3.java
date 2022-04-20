@@ -37,5 +37,6 @@ public class Test3 {
     }
     interface Swim_able {
         void swim();
+
     }
 

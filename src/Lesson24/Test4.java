@@ -1,6 +1,7 @@
 package Lesson24;
 
 public class Test4 {
+
     Jampable j1= new Human();
     Jampable j2= new Animal();
 

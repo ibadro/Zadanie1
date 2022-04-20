@@ -14,6 +14,7 @@ public class Test5 {
                 Z2 z=new Z2 ();
                 z.abc();
                 z.def();
+
                 z.ghi();
             }
 }
