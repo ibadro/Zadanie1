@@ -68,7 +68,8 @@ class Meshenosec extends Fish {
     }
     public void swim() {
         System.out.println("Меченосец красивая рыба, которая быстро плавает!");
-    } void eat() {
+    }
+    void eat() {
         System.out.println("Меченосец  не хищная рыба, и она есть обычный рыбий корм!");
     }
 }
