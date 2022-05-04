@@ -11,14 +11,14 @@ public class HomeWork {
         Fish2 f1 = new Meshenosec2("Karl2_2");
         Bird2 b1 = new Pnigvin2("Dudin2_2");
         Mammal2 m1 = new Lev2("Leva2_2");
-        Meshenosec2 mesh1 = Meshenosec2("Karl2_3");
+        Meshenosec2 mesh1 = new Meshenosec2("Karl2_2") ;
         Pnigvin2 p1 = new Pnigvin2("Dudin2_3");
-        Lev2 l1 =new Lev2("Leva2_3");
+        Lev2 l1 = new Lev2("Leva2_3");
         Speakable2 s1 = new Pnigvin2("Dudin2_4");
         Speakable2 s2 = new Lev2("Leva2_4");
-        Animal2[] array1 = {a1,a2,a3,f1,b1,m1,mesh1,p1,l1};
-        Speakable2[] array2 = {s1,s2,b1,m1,p1,l1};
-        for (Animal2 a:array1) {
+        Animal2[] array1 = {a1, a2, a3, f1, b1, m1, mesh1, p1, l1};
+        Speakable2[] array2 = {s1, s2, b1, m1, p1, l1};
+        for (Animal2 a : array1) {
             if (a instanceof Meshenosec2) {
                 Meshenosec2 m = (Meshenosec2) a;
                 System.out.println(m.name2);
@@ -42,22 +42,25 @@ public class HomeWork {
             }
             System.out.println("---------------------------------");
         }
-        for (Speakable2 s: array2){
-            if (s instanceof Pnigvin2);
+        for (Speakable2 s : array2) {
+            if (s instanceof Pnigvin2) {
             Pnigvin2 p = (Pnigvin2) s;
             System.out.println(p.name2);
             p.eat2();
             p.sleep2();
             p.fly2();
             p.speak2();
-        } else if(s instanceof Lev2){
-        Mammal2 mam = new Lev2("Leva2");
-        System.out.println(mam.name2);
-        mam.eat2();
-        mam.speak2();
-        mam.sleep2();
-        mam.run2();
+        } else if (s instanceof Lev2) {
+            Lev2 l = (Lev2) s;
+            System.out.println(l.name2);
+            l.eat2();
+            l.sleep2();
+            l.run2();
+            l.speak2();
+        }
+        System.out.println("---------------------------------");
     }
+}
 }
 abstract class Animal2 {
     Animal2(String name2) {

@@ -4,7 +4,7 @@ package ОсновыJava.УправляющиеИнструкции;
 Завершенная справочная система по управляющим
 инструкциям Java, обрабатывающая многократные запросы.
 */
-public class Help3 {
+public class   Help3 {
     public static void main(String args[])
             throws java.io.IOException {
         char choice, ignore;
