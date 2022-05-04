@@ -5,17 +5,52 @@ package Lesson25;
 * обьекта и вызывайте его методы*/
 public class HomeWork {
     public static void main(String[] args) {
-        Meshenosec2 m = new Meshenosec2("Karl");
-        System.out.println(m.name2);
-        m.eat2();
-        m.sleep2();
-        m.swim2();
-        Speakable2 s1 = new Pnigvin2("Dudun");
-        s1.speak2();
-         Animal2 a = new Lev2("Leva");
-        System.out.println(a.name2);
-        a.eat2();
-        a.sleep2();
+        Animal2 a1 = new Meshenosec2("Karl2_1");
+        Animal2 a2 = new Pnigvin2("Dudin2_1");
+        Animal2 a3 = new Lev2("Leva2_1");
+        Fish2 f1 = new Meshenosec2("Karl2_2");
+        Bird2 b1 = new Pnigvin2("Dudin2_2");
+        Mammal2 m1 = new Lev2("Leva2_2");
+        Meshenosec2 mesh1 = Meshenosec2("Karl2_3");
+        Pnigvin2 p1 = new Pnigvin2("Dudin2_3");
+        Lev2 l1 =new Lev2("Leva2_3");
+        Speakable2 s1 = new Pnigvin2("Dudin2_4");
+        Speakable2 s2 = new Lev2("Leva2_4");
+        Animal2[] array1 = {a1,a2,a3,f1,b1,m1,mesh1,p1,l1};
+        Speakable2[] array2 = {s1,s2,b1,m1,p1,l1};
+        for (Animal2 a:array1) {
+            if (a instanceof Meshenosec2) {
+                Meshenosec2 m = (Meshenosec2) a;
+                System.out.println(m.name2);
+                m.eat2();
+                m.sleep2();
+                m.swim2();
+            } else if (a instanceof Pnigvin2) {
+                Pnigvin2 p = (Pnigvin2) a;
+                System.out.println(p.name2);
+                p.eat2();
+                p.sleep2();
+                p.fly2();
+                p.speak2();
+            } else if (a instanceof Lev2) {
+                Lev2 l = (Lev2) a;
+                System.out.println(l.name2);
+                l.eat2();
+                l.sleep2();
+                l.run2();
+                l.speak2();
+            }
+            System.out.println("---------------------------------");
+        }
+        for (Speakable2 s: array2){
+            if (s instanceof Pnigvin2);
+            Pnigvin2 p = (Pnigvin2) s;
+            System.out.println(p.name2);
+            p.eat2();
+            p.sleep2();
+            p.fly2();
+            p.speak2();
+        } else if(s instanceof Lev2){
         Mammal2 mam = new Lev2("Leva2");
         System.out.println(mam.name2);
         mam.eat2();
