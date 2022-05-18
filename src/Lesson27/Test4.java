@@ -1,18 +1,15 @@
 package Lesson27;
-import java.io.*;
-public class Test2 {
+/* обработка эксепшена*/
+public class Test4 {
     public static void main(String[] args) {
-        File f =new File("test8.txt");
-
+        int [] array  = {4,8,1};
+        System.out.println("u nas est massiv");
 
         try {
-            FileInputStream fis =new FileInputStream(f); // будет ошибка
+            System.out.println(array[5]); // будет ошибка
             System.out.println("vsem horoshego dnya");
         }
-        catch (FileNotFoundException e){ // ловим эксепшен
-            System.out.println("bil poiman exception:"+ e);
-        }
-        catch (NullPointerException e){ // ловим эксепшен
+        catch (ArrayIndexOutOfBoundsException e){ // ловим эксепшен
             System.out.println("bil poiman exception:"+ e);
         }
         finally { // всегда срабатывает
@@ -21,4 +18,3 @@ public class Test2 {
         System.out.println("dannii kod ne imeet otnoshenia k isklusheniyam");
     }
 }
-
