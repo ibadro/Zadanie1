@@ -1,8 +1,6 @@
 
 package Lesson28;
-
 import java.time.*;
-
 public class Test1 {
     
     public static void main(String[] args) {
@@ -15,7 +13,6 @@ public class Test1 {
 //        LocalDate ld = new LocalDate(2012, 12, 14);
 // Создавать объекты классов LocalDate, LocalTime, LocalDateTime нельзя,
 // используя кострукторы, потому что их конструкторы имеют аксесс модефаеры private
-
 
         // как же Создавать объекты классов LocalDate, LocalTime, LocalDateTime?
         // LocalDate
